@@ -41,6 +41,7 @@
         padding: 8px 15px;
         border-radius: 5px;
         transition: 0.3s;
+        text-decoration: none;
       }
 
       nav a:hover {
@@ -57,7 +58,7 @@
 
       .block {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: row; /* <-- force l’ordre : image → texte */
         align-items: center;
         background: white;
         margin-bottom: 40px;
@@ -68,12 +69,24 @@
 
       .block img {
         width: 45%;
-        height: 300px;
+        height: auto;
         object-fit: cover;
       }
 
       .text {
+        width: 55%;
         padding: 25px;
+      }
+
+      @media (max-width: 768px) {
+        .block {
+          flex-direction: column;
+        }
+
+        .block img,
+        .text {
+          width: 100%;
+        }
       }
 
       h2 {
@@ -117,6 +130,7 @@
           <a href="../index.html">Volley</a>
           <a href="./Course Formule1.html">Course</a>
           <a href="../cyclisme/index.html">Cyclisme</a>
+          <a href="../rallye/SPORT.html">Rallye</a>
         </nav>
       </div>
       <div style="text-align: center; padding: 10px 0">
