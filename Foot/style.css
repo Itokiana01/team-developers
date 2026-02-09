@@ -1,3 +1,32 @@
+.navbar { 
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: linear-gradient(45deg, #103355, #0c263f);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.navbar .logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: 0.3s;
+
+}
+
+.navbar a:hover {
+  color: #ffd700;
+}
+
 body{
     background-color: beige;
 }
@@ -9,8 +38,8 @@ p{
 }
 h1{
     text-align: center;
-    color: white;
-    background-image:url(images/franco-alani-catafo45XRA-unsplash.jpg) ;
+    color: rgb(92, 84, 84);
+    background-image:url("images/franco-alani-catafo45XRA-unsplash.jpg") ;
     font-size: 3em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: underline;

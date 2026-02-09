@@ -9,17 +9,39 @@
         font-family: Arial, sans-serif;
         line-height: 1.6;
         color: #333;
-        max-width: 900px;
-        margin: auto;
-        padding: 20px;
-        background-color: #f4f9ff;
       }
       header {
-        background: #0077be;
+        background: #0300b3;
         color: white;
-        padding: 1rem;
-        text-align: center;
-        border-radius: 8px;
+      }
+
+      .navbar {
+        max-width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .logo {
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      nav a {
+        color: white;
+        margin-left: 20px;
+        font-weight: bold;
+        padding: 8px 15px;
+        border-radius: 5px;
+        transition: 0.3s;
+        text-decoration: none;
+      }
+
+      nav a:hover {
+        background: #b3b000;
+        color: black;
       }
       section {
         background: white;
@@ -54,9 +76,19 @@
   </head>
   <body>
     <header>
-      <h1>La Natation : Sport et Art de Vivre</h1>
+      <div class="navbar">
+        <div class="logo">Team Developer EMIT</div>
+        <nav>
+          <a href="../index.html">Accueil</a>
+          <a href="../course/Course Formule1.html">Course</a>
+          <a href="../cyclisme/index.html">Cyclisme</a>
+          <a href="../rallye/SPORT.html">Rallye</a>
+          <a href="../Moto GP/moto.html">MotoGP</a>
+          <a href="../Foot/foot.html">Foot</a>
+          <a href="./La  natation.html">Natation</a>
+        </nav>
+      </div>
     </header>
-
     <section id="definition">
       <h2>Définition</h2>
       <p>
@@ -84,7 +116,7 @@
         <div class="nage-card">
           <button><h3>Le Crawl</h3></button>
           <p>La nage la plus rapide et la plus populaire en compétition.</p>
-          <img src="Natation/crawl.jpg" />
+          <img src="crawl.jpg" />
         </div>
         <div class="nage-card">
           <button><h3>La Brasse</h3></button>
@@ -92,12 +124,12 @@
             Une nage technique où les bras et les jambes travaillent en
             symétrie.
           </p>
-          <img src="Natation/brasse.jpg" />
+          <img src="brasse.jpg" />
         </div>
         <div class="nage-card">
           <button><h3>Le Dos Crawlé</h3></button>
           <p>La seule nage pratiquée sur le dos, idéale pour la respiration.</p>
-          <img src="Natation/dos.jpg" />
+          <img src="dos.jpg" />
         </div>
         <div class="nage-card">
           <button><h3>Le Papillon</h3></button>
@@ -105,7 +137,7 @@
             La nage la plus athlétique et spectaculaire, demandant beaucoup de
             force.
           </p>
-          <img src="Natation/papillon.jpg" />
+          <img src="papillon.jpg" />
         </div>
       </div>
     </section>
