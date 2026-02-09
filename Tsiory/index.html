@@ -1,73 +1,206 @@
-<!DOCTYPE html> 
-<html lang="fr"> 
-<head> <meta charset="UTF-8">
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Basket-ball</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* ===== STYLE GLOBAL ===== */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+      }
 
-  <title>Le Basket-ball</title>
-  <style> body { font-family: Arial, sans-serif; background-color: #f9f9f9; margin: 20px; line-height: 1.7; } h1 { color: #e67e22; text-align: center; } h2 { color: #2c3e50; margin-top: 25px; } .container { background: #ffffff; padding: 25px; border-radius: 10px; max-width: 900px; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); } ul { margin-left: 25px; } </style> 
-    
-<style>footer{
-    text-align:center;
-    padding:20px;
-    background:#222;
-    color:white;
-}</style>
-</head>
-<body> 
-  <div class="container">
-    
-    
-      
-      
-    <h1>🏀 Le Basket-ball</h1>
-      
-      
-   <img src="images/téléchargement (1) " class="image-centree" width="45%" height="300px">
-    
-    <p> Le basket-ball est un sport collectif où deux équipes de 5 joueurs s’affrontent pour marquer des points en mettant le ballon dans le panier adverse. Il a été inventé en 1891 par James Naismith aux États-Unis🇺🇸. </p> 
-    <p> Le match se joue sur un terrain rectangulaire avec deux paniers, une ligne à 3 points et une ligne de lancers francs.<br> La durée du match est de 4 quarts-temps (10 minutes en FIBA, 12 minutes en NBA). </p> 
-    <h2>🏀 Marquer des points</h2> 
-    <ul> <li>2 points pour un panier normal</li>
-      <li>3 points derrière la ligne à 3 points</li>
-      <li>1 point pour un lancer franc</li> </ul> 
-    
-    <h2>🏀 Types de basket-ball</h2> 
-    <ul> 
-      <li>Basket classique (5 contre 5)</li> 
-      <li>Basket 3x3</li> 
-      <li>Streetball (basket de rue, spectaculaire)</li>
-      <li>Mini-basket (enfants)</li> 
-      <li>Basket en fauteuil roulant (pour les personnes handicapées)</li>
-      <li>Basket féminin</li> 
-      <li>Basket scolaire et universitaire</li> 
-      <li>Slam Ball (basket avec trampoline)</li> 
-      <li>Beach Basket (basket de plage)</li>
-    </ul> 
-    <h2>🏀 Postes</h2>
-    <p> Les principaux postes sont : meneur, arrière, ailier, ailier fort et pivot. </p>
-    <h2>🏀 Règles importantes</h2>
-    <ul> 
-      <li>Ne pas marcher sans dribbler<strong>(marché)</strong></li> 
-      <li>Pas de double dribble<strong>(réprise)</strong></li> 
-      <li>Respect des fautes<strong>(intentionnelle,simple,discalifiante et anti-sportif)</strong></li> 
-      <li>Temps limité pour attaquer<strong>(8 second pour attindre la linge mediane et 24 seconde pour chaque attaque )</strong></li>
-    </ul> 
-      
-      
-      <img src="images/téléchargement (2) "width=45% height="300px">
-    
-        
-        <h2>🏀 Bienfaits</h2> 
-    <p> Le basket-ball apporte de nombreux bienfaits : amélioration de la forme physique, rapidité, coordination, esprit d’équipe et renforcement du cœur. </p> 
-    <h2>🏀 Joueurs célèbres</h2>
-    <p> <strong>Michael Jordan, LeBron James, Kobe Bryant, Stephen Curry ,Shaquille O’Neal et  Victore Wenbayama.</strong></p>
-        
-        
-          
-   </div> 
+      a {
+        text-decoration: none;
+      }
 
-<footer>
-  <img src="images/téléchargement"
-footer>
+      /* ===== NAVBAR ===== */
+      .navbar {
+        max-width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #0300b3;
+        color: white;
+      }
 
-</body>
+      .navbar .logo {
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      nav a {
+        color: white;
+        margin-left: 15px;
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+
+      nav a:hover {
+        background: #b3b000;
+        color: black;
+      }
+
+      /* ===== CONTENU ===== */
+      .container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #e67e22;
+      }
+
+      h2 {
+        color: #2c3e50;
+        margin-top: 25px;
+      }
+
+      p {
+        line-height: 1.7;
+        margin-top: 10px;
+      }
+
+      ul {
+        margin-left: 25px;
+      }
+
+      img {
+        display: block;
+        margin: 15px auto;
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+
+      /* ===== FOOTER ===== */
+      footer {
+        background: #222;
+        color: white;
+        text-align: center;
+        padding: 25px;
+      }
+
+      /* ===== RESPONSIVE ===== */
+      @media (max-width: 768px) {
+        .navbar {
+          flex-direction: column;
+          text-align: center;
+        }
+        nav a {
+          display: block;
+          margin: 5px 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <header>
+      <div class="navbar">
+        <div class="logo">Team Developer EMIT</div>
+        <nav>
+          <a href="../index.html">Accueil</a>
+          <a href="../course/Course Formule1.html">Course</a>
+          <a href="../cyclisme/index.html">Cyclisme</a>
+          <a href="../rallye/SPORT.html">Rallye</a>
+          <a href="../Moto GP/moto.html">MotoGP</a>
+          <a href="../Foot/foot.html">Foot</a>
+          <a href="../Natation/La natation.html">Natation</a>
+          <a href="./index.html">Basket-ball</a>
+          <a href="../mouhalaz/index.html">Tennis</a>
+          <a href="../cricket/Cricket-1.html">Cricket</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <h1>🏀 Le Basket-ball</h1>
+
+      <img src="./1770633535442.jpg" width="45%" height="300px" />
+
+      <p>
+        Le basket-ball est un sport collectif où deux équipes de 5 joueurs
+        s’affrontent pour marquer des points en mettant le ballon dans le panier
+        adverse. Il a été inventé en 1891 par James Naismith aux États-Unis🇺🇸.
+      </p>
+      <p>
+        Le match se joue sur un terrain rectangulaire avec deux paniers, une
+        ligne à 3 points et une ligne de lancers francs. La durée du match est
+        de 4 quarts-temps (10 minutes en FIBA, 12 minutes en NBA).
+      </p>
+
+      <h2>🏀 Marquer des points</h2>
+      <ul>
+        <li>2 points pour un panier normal</li>
+        <li>3 points derrière la ligne à 3 points</li>
+        <li>1 point pour un lancer franc</li>
+      </ul>
+
+      <h2>🏀 Types de basket-ball</h2>
+      <ul>
+        <li>Basket classique (5 contre 5)</li>
+        <li>Basket 3x3</li>
+        <li>Streetball (basket de rue, spectaculaire)</li>
+        <li>Mini-basket (enfants)</li>
+        <li>Basket en fauteuil roulant (personnes handicapées)</li>
+        <li>Basket féminin</li>
+        <li>Basket scolaire et universitaire</li>
+        <li>Slam Ball (basket avec trampoline)</li>
+        <li>Beach Basket (basket de plage)</li>
+      </ul>
+
+      <h2>🏀 Postes</h2>
+      <p>Meneur, arrière, ailier, ailier fort et pivot.</p>
+
+      <h2>🏀 Règles importantes</h2>
+      <ul>
+        <li>Ne pas marcher sans dribbler <strong>(marché)</strong></li>
+        <li>Pas de double dribble <strong>(réprise)</strong></li>
+        <li>
+          Respect des fautes
+          <strong
+            >(intentionnelle, simple, disqualifiante, anti-sportif)</strong
+          >
+        </li>
+        <li>
+          Temps limité pour attaquer
+          <strong
+            >(8 secondes pour atteindre la ligne médiane et 24 secondes pour
+            chaque attaque)</strong
+          >
+        </li>
+      </ul>
+
+      <img src="./1770633537295.jpg" width="45%" height="300px" />
+
+      <h2>🏀 Bienfaits</h2>
+      <p>
+        Le basket-ball améliore la forme physique, la rapidité, la coordination,
+        l’esprit d’équipe et renforce le cœur.
+      </p>
+
+      <h2>🏀 Joueurs célèbres</h2>
+      <p>
+        <strong
+          >Michael Jordan, LeBron James, Kobe Bryant, Stephen Curry, Shaquille
+          O’Neal, Victor Wembanyama</strong
+        >
+      </p>
+    </div>
+
+    <footer>
+      Site HTML éducatif de basket-ball | Réalisé par <b>Tsiory</b>
+    </footer>
+  </body>
 </html>
