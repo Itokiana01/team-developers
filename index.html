@@ -1,154 +1,174 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LE VOLLEYBALL</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LE VOLLEYBALL</title>
 
-<style>
-/* --- TES STYLES ORIGINAUX --- */
-body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:#f0f0f0;
-}
+    <style>
+      /* ===== STYLE GLOBAL ===== */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f0f0f0;
+        color: #333;
+      }
 
-header{
-    background:#0300b3;
-    color:white;
-    text-align:center;
-    padding:50px;
-}
+      a {
+        text-decoration: none;
+      }
 
-.container{
-    max-width:1100px;
-    margin:auto;
-    padding:40px;
-}
+      /* ===== HEADER + NAVBAR ===== */
+      header {
+        background: #0300b3;
+        color: white;
+      }
 
-.block{
-    display:flex;
-    background:white;
-    margin-bottom:50px;
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 5px 20px rgba(0,0,0,0.2);
-}
+      .navbar {
+        max-width: 1100px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+      }
 
-.block img{
-    width:45%;
-    object-fit:cover;
-}
+      .logo {
+        font-size: 22px;
+        font-weight: bold;
+      }
 
-.text{
-    padding:30px;
-}
+      nav a {
+        color: white;
+        margin-left: 20px;
+        font-weight: bold;
+        padding: 8px 15px;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
 
-h2, h2, h2 { /* Harmonisation des titres */
-    color:#b3b000;
-}
+      nav a:hover {
+        background: #b3b000;
+        color: black;
+      }
 
-footer{
-    background:#222;
-    color:white;
-    text-align:center;
-    padding:25px;
-}
+      /* ===== CONTENU ===== */
+      .container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 40px 20px;
+      }
 
-/* --- NOUVEAUX STYLES POUR LA NAVIGATION --- */
-nav {
-    margin-top: 30px;
-}
+      .block {
+        display: flex;
+        background: white;
+        margin-bottom: 40px;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+      }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    padding: 10px 20px;
-    border: 2px solid transparent;
-    border-radius: 5px;
-    transition: 0.3s; /* Animation fluide au survol */
-}
+      .block img {
+        width: 45%;
+        object-fit: cover;
+      }
 
-nav a:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: #b3b000;
-    color: #b3b000;
-}
+      .text {
+        padding: 30px;
+      }
 
-html {
-    scroll-behavior: smooth; /* Défilement fluide quand on clique sur un lien */
-}
+      h2 {
+        color: #b3b000;
+      }
 
-/* Adaptabilité mobile simple */
-@media (max-width: 768px) {
-    .block {
-        flex-direction: column;
-    }
-    .block img {
-        width: 100%;
-        height: 250px;
-    }
-}
-</style>
-</head>
+      /* ===== FOOTER ===== */
+      footer {
+        background: #222;
+        color: white;
+        text-align: center;
+        padding: 25px;
+      }
 
-<body>
+      /* ===== RESPONSIVE ===== */
+      @media (max-width: 768px) {
+        .block {
+          flex-direction: column;
+        }
+        .block img {
+          width: 100%;
+          height: 250px;
+        }
+        .navbar {
+          flex-direction: column;
+          text-align: center;
+        }
+        nav a {
+          display: block;
+          margin: 5px 0;
+        }
+      }
+    </style>
+  </head>
 
-<header>
-    <h1>🏐 Le Volley Ball</h1>
-    <nav>
-        <a href="#definition">Définition</a>
-        <a href="#histoire">Histoire</a>
-        <a href="#materiel">Matériel</a>
-    </nav>
-</header>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">🏐 Team Developer EMIT</div>
+        <nav>
+          <a href="./index.html">Accueil</a>
+          <a href="./course/Course Formule1.html">Course</a>
+          <a href="./cyclisme/index.html">Cyclisme</a>
+        </nav>
+      </div>
+    </header>
 
-<div class="container">
-
-    <div class="block" id="definition">
-        <img src="Joeur.jpg" alt="Joueur de Volleyball">
+    <div class="container">
+      <div class="block" id="definition">
+        <img src="Joeur.jpg" alt="Joueur de Volleyball" />
         <div class="text">
-            <h2>Définition</h2>
-            <p>Le volley-ball est un sport collectif opposant deux équipes de 6 joueurs(M15, M18 et senior), de 4 joueurs (M13) ou de 2 joueurs (M11 et M9) séparés par un filet de hauteur variable selon le niveau et la catégorie, qui s'affrontent avec un ballon sur un terrain rectangulaire de 18 m de long sur 9 m de large ou de 14 m de long et 7 m de large selon la catégorie.
-
-Le volley-ball se joue dans un gymnase ou en extérieur. Des variantes se jouent selon des règles et sur des terrains de dimensions différentes, telles le beach-volley sur terrain de sable, le snow volleyball sur neige, ou encore le volleyball aquatique dans l'eau.
-
-Comptant 260 millions de pratiquants licenciés au niveau mondial en 2018, le volley-ball est l'un des sports les plus pratiqués dans le monde.</p>
+          <h2>Définition</h2>
+          <p>
+            Le volley-ball est un sport collectif opposant deux équipes de 6
+            joueurs (M15, M18 et senior), de 4 joueurs (M13) ou de 2 joueurs
+            (M11 et M9) séparés par un filet de hauteur variable selon le niveau
+            et la catégorie, qui s'affrontent avec un ballon sur un terrain
+            rectangulaire. Il se joue en gymnase ou en extérieur. Des variantes
+            existent : beach-volley, snow volleyball, volley aquatique. Le
+            volley-ball est l'un des sports les plus pratiqués dans le monde.
+          </p>
         </div>
+      </div>
+
+      <div class="block" id="histoire">
+        <img src="ballon.jpg" alt="Histoire du Volleyball" />
+        <div class="text">
+          <h2>Histoire</h2>
+          <p>
+            Inventé en 1895 aux États-Unis par William G. Morgan, le volley-ball
+            s'inspire du basket-ball, tennis et surtout du badminton. La «
+            mintonette » a été conçue pour occuper les athlètes durant l’hiver
+            et proposer un sport moins violent que le basket. Les premières
+            règles prévoyaient un filet de 1,98 m de hauteur et un nombre de
+            joueurs illimité.
+          </p>
+        </div>
+      </div>
+
+      <div class="block" id="materiel">
+        <img src="terrain.png" alt="Matériel de Volleyball" />
+        <div class="text">
+          <h2>Matériel et caractéristiques</h2>
+          <p>
+            Le terrain mesure 18 m sur 9 m. Chaque équipe occupe une moitié
+            séparée par un filet. Le ballon est léger et souple. Pour les jeunes
+            catégories, le terrain et le nombre de joueurs sont adaptés. Trois
+            ballons sont utilisés lors des compétitions pour diminuer les temps
+            morts.
+          </p>
+        </div>
+      </div>
     </div>
 
-    <div class="block" id="histoire">
-        <img src="ballon.jpg" alt="Histoire du Volleyball">
-        <div class="text">
-            <h2>Histoire du Volleyball</h2>
-            <p>Le volley-ball a été inventé en 1895 aux États-Unis  par un professeur d’éducation physique des UCJG (YMCA), à Holyoke dans le Massachusetts, William G. Morgan (Jonesy) (1870-1942), afin d'occuper les athlètes pendant l'hiver. C'est en s'inspirant à la fois du basket-ball et du tennis, mais surtout du badminton (qui fournit le premier modèle de filet), qu'est née la « mintonette », le 2 décembre 1895. Un autre sport de salle, le basket-ball, a été inventé seulement dix miles (seize kilomètres) plus loin dans la ville de Springfield (Massachusetts), seulement quatre années auparavant. La mintonette se devait d'être un sport de salle moins violent que le basket-ball, pour les membres les plus âgés du Young Men's Christian Association, tout en exigeant toujours un minimum d'effort physique.
-
-Les premières règles, écrites par William G. Morgan, instauraient un filet de 1,98 m de hauteur, un terrain de 15,2 × 7,6 m, et un nombre de joueurs illimité. Un match était composé de neuf tours avec trois services pour chaque équipe dans chaque tour, avec un nombre de contacts avec la balle illimité pour chaque équipe avant son renvoi à l'adversaire. En cas d'une erreur de service, un deuxième essai était permis. Le fait de frapper la balle dans le filet était considéré comme une faute (avec la perte du point ou d'un temps-mort) sauf si cela se passait à la première tentative de service..</p>
-        </div>
-    </div>
-
-    <div class="block" id="materiel">
-        <img src="terrain.png" alt="Matériel de Volleyball">
-        <div class="text">
-            <h2>Matériels et caractéristiques</h2>
-            <p>Le terrain a une forme rectangulaire de 18 mètres sur 9 mètres de largeur. Les lignes de délimitation sont à l'intérieur du terrain. Une ligne centrale s'étend sous le filet sur toute la largeur du terrain et sépare les deux camps. Une ligne d'attaque est peinte au sol dans chaque moitié de terrain, à trois mètres du filet; elle est communément appelée « ligne des 3 mètres ».
-Les dimensions du terrain de volley ne varient jamais.
-2 camps de 9 × 9 m chacun que ce soit pour une équipe minime ou internationale.
-La taille du terrain est plus petite chez les poussin(ne)s (9-10 ans) ou les benjamin(ne)s (11-12 ans) : voir plus bas.
-Pour le public scolaire, la dimension du terrain et le nombre de joueurs sur le terrain diminuent.
-Chaque équipe occupe une moitié du terrain séparée de l'autre par un filet d'1 mètre de large et 9 m de long, dont la bordure supérieure est placée à une hauteur variable en fonction de la catégorie d'âge de l'équipe : voir plus bas.
-Deux « antennes » (barres verticales également appelées « mires ») sont accrochées au filet à hauteur des limites du terrain (le filet est généralement plus large que ce dernier). Le ballon doit passer entre ces antennes lors des échanges (sauf exceptions) entre équipes lors des phases de jeu. Deux bandes blanches, accolées aux antennes, sont situées sur le filet à la verticale des lignes de côté.
-Le ballon de volley-ball est légèrement plus petit, mais beaucoup plus souple et plus léger que celui de football. Il doit avoir une circonférence comprise entre 65 et 67 cm, une masse comprise entre 260 et 280 g (plus léger en catégories jeunes : voir plus bas) et une pression comprise entre 0,300 et 0,325 bar. Depuis 1978, pour diminuer le temps de jeu, trois ballons sont utilisés lors des rencontres internationales et nationales. Finies les pertes de temps pour le récupérer au service, puisque quatre ramasseurs de balles sont placés autour du terrain. Ce système a permis une diminution d'environ 20 % de la durée des rencontres.</p>
-        </div>
-    </div>
-
-</div>
-
-<footer>
-    Site HTML éducatif de volleyball
-</footer>
-  
-</body>
+    <footer>Site HTML éducatif de volleyball | © 2026</footer>
+  </body>
 </html>
