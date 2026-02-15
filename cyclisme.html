@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A PROPOS DE SITE CYCLISME</title>
+    <style>
+        .sever{
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5)23%,rgba(0,0,0,0.5)23%),url(images.jpeg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff200;
+            text-align: center;
+
+        }
+        body{
+            margin:0;
+            font-family:Arial, sans-serif;
+            background-color: #fff200;
+            line-height: 1.6;
+            color: #333;
+        }
+        .sever h1{
+            font-size: 70px;
+            letter-spacing: 4px;
+
+        }
+        .sever p{ 
+            font-size: 22px;
+        }
+        section{
+            background: white;
+            margin: 30px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        section h2{
+            color: #103355;
+            margin-bottom: 15px;
+
+        }
+        section img{
+            width: 80%;
+            max-height: 600px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 15px;
+            color: #103355;
+            border: 3px solid  ;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            
+            cursor: pointer;
+        }
+        section img:hover{
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+        section p{
+            text-align: justify;
+        }
+        video{
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            
+        }
+        video:hover{
+            transform: scale(1.03);
+            box-shadow: 0 10 px 25px rgba(0,0,0,0.3);
+
+        }
+        video:active{
+            transform: scale(0.97);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+            border: 3px solid#0c263f;
+        }
+        footer{
+            background-color: rgba(145, 189, 34, 0.762);
+            color: black;
+            text-align: center;
+            padding: 20px 10px;
+            font-size: 16px;
+            margin-top: 40px;
+            border-top: 4px solid #FFA500;
+        }
+        footer a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 5px;
+            transition: color 0.3s ease;
+
+        }
+        footer a:hover{
+             color: #fff;
+        }
+        a.btn-link{
+            display: inline-block;
+            background-color: #FFd700;
+            color: #000;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 15px;
+            transition: background-color 0.3s ease,color 0.3s ease;
+            transform:skewX(1.05);
+
+        }
+        a.btn-link:hover{
+            background-color: #FFA500;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <header class="sever">
+        <h1>PASSION CYCLISME</h1>
+        <P>Viver la vitesse .ressenter l'energie. Depasser vos limites</P>
+    </header>
+    <section>
+        <h2>Historique du cyclisme</h2>
+        <img src="velo.jpeg" alt="ancien velo" width="400px">
+        <p>Le cyclisme est apparu au xvx siecle avec l'invention du velo</p>
+    </section>
+    <section>
+        <h2>CONCEPT DU CYCISME</h2>
+        <img src="cyclisme.jpeg" alt="cycliste sur route " width="400px">
+        <p>Le cyclisme est une activite sportive basee sur l'utilisation du velo. <br>il peut etre pratiquer pour la competition , le loisir ou le transport ,et sollicite l'endurence  ainsi que la coordination physique</p>
+
+
+    </section>
+    <section>
+        <h2>EVOTUTION DU CYCLISME </h2>
+        <img src="vtt.jpg" alt="VTT modern" width="400px">
+        <p> le cyclisme a evolue grace aux innovation technologique et a la creation <br> de nouvelles disciplines comme le <strong>VTT et  BMX</strong> elargisant son accessibilite at sa populariter dans le monde</p>
+
+    </section>
+    <section>
+        <h2> voici un video d'un cyclisme</h2>
+        <video controls src="video.mp4" type="video/mp4">the video is very good </video>
+        <p>Decouvrez l'intensite et la passion du cyclisme a travers cette video illustration les perfomances et l'endurence des cyclistes</p>
+        <p> <a href="index.html" class="btn-link"> retour a la page d'acceuille</a></p>
+    </section>
+    <footer>
+        <p>
+            2026 passion cyclisme suiver-nous sur 
+            <a href="">FACEBOOK</a>
+            <a href="">TWITER</a>
+            <a href="">INSTAGRAM</a>
+        </p>
+    </footer>
+        
+    
+</body>
+</html>
