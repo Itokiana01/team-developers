@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MotoGP - Sport mécanique</title>
+    <style>
+      /* ===== Global ===== */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(120deg, #1e3c72, #2a5298);
+        color: #fff;
+        line-height: 1.6;
+        scroll-behavior: smooth;
+      }
+      header {
+        background: #0300b3;
+        color: white;
+      }
+
+      .navbar {
+        max-width: 1100px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .logo {
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      nav a {
+        color: white;
+        margin-left: 20px;
+        font-weight: bold;
+        padding: 8px 15px;
+        border-radius: 5px;
+        transition: 0.3s;
+        text-decoration: none;
+      }
+
+      nav a:hover {
+        background: #b3b000;
+        color: black;
+      }
+
+      /* ===== Container ===== */
+      .container {
+        max-width: 900px;
+        margin: auto;
+        padding: 30px;
+      }
+
+      /* ===== Titles ===== */
+      h1 {
+        text-align: center;
+        font-size: 3em;
+        color: #ffcc00;
+        margin-bottom: 20px;
+        text-shadow: 3px 3px 6px #000;
+        animation: glow 2s infinite alternate;
+      }
+
+      h2 {
+        color: #00ffff;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        border-bottom: 2px solid #ffcc00;
+        display: inline-block;
+        padding-bottom: 5px;
+        position: relative;
+      }
+
+      h2::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background: #ffcc00;
+        left: 0;
+        bottom: 0;
+        transition: width 0.3s ease;
+      }
+
+      h2:hover::after {
+        width: 100%;
+      }
+
+      /* ===== Paragraphs ===== */
+      p {
+        font-size: 1.1em;
+        margin-bottom: 15px;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        transition: background 0.3s ease;
+      }
+
+      p:hover {
+        background: rgba(255, 255, 0, 0.2);
+      }
+
+      /* ===== Lists ===== */
+      ul {
+        list-style-type: square;
+        padding-left: 20px;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+      }
+
+      li {
+        margin-bottom: 8px;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.3s ease;
+      }
+
+      li::before {
+        content: "🏍️ ";
+      }
+
+      li:hover {
+        color: #ffcc00;
+        transform: translateX(10px);
+      }
+
+      /* ===== Glow animation ===== */
+      @keyframes glow {
+        from {
+          text-shadow: 2px 2px 5px #000;
+        }
+        to {
+          text-shadow:
+            2px 2px 20px #ffcc00,
+            0 0 20px #ffcc00;
+        }
+      }
+
+      /* ===== Section fade-in ===== */
+      section {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeIn 1s forwards;
+        animation-delay: 0.2s;
+      }
+
+      section:nth-of-type(2) {
+        animation-delay: 0.4s;
+      }
+      section:nth-of-type(3) {
+        animation-delay: 0.6s;
+      }
+      section:nth-of-type(4) {
+        animation-delay: 0.8s;
+      }
+      section:nth-of-type(5) {
+        animation-delay: 1s;
+      }
+      section:nth-of-type(6) {
+        animation-delay: 1.2s;
+      }
+
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* ===== Footer ===== */
+      footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 0.9em;
+        color: #ccc;
+        padding: 10px;
+      }
+    </style>
+    <header>
+      <div class="navbar">
+        <div class="logo">🏐 Team Developer EMIT</div>
+        <nav>
+          <a href="../index.html">Accueil</a>
+          <a href="../course/Course Formule1.html">Course</a>
+          <a href="../cyclisme/index.html">Cyclisme</a>
+          <a href="../rallye/SPORT.html">Rallye</a>
+          <a href="./moto.html">MotoGP</a>
+          <a href="../Foot/foot.html">Foot</a>
+          <a href="../Natation/La  natation.html">Natation</a>
+          <a href="../Tsiory/index.html">Basket-ball</a>
+          <a href="../mouhalaz/index.html">Tennis</a>
+          <a href="../cricket/Cricket-1.html">Cricket</a>
+        </nav>
+      </div>
+    </header>
+  </head>
+  <body>
+    <div class="container">
+      <section>
+        <h1>🏍️ Sport mécanique GP (MotoGP)</h1>
+        <p>
+          Le sport mécanique GP, surtout appelé MotoGP, est une compétition de
+          course de motos très rapides sur circuit. C’est l’équivalent de la
+          Formule 1 mais pour les motos.
+        </p>
+      </section>
+
+      <section>
+        <h2>🏁 Qu’est-ce que le MotoGP ?</h2>
+        <p>
+          Le MotoGP est la catégorie reine des courses de motos. Les motos font
+          environ 1000 cm³ et peuvent atteindre 350 km/h.
+        </p>
+      </section>
+
+      <section>
+        <h2>🏍️ Les catégories</h2>
+        <ul>
+          <li>Moto3 : jeunes pilotes, motos 250 cm³</li>
+          <li>Moto2 : motos 765 cm³</li>
+          <li>MotoGP : catégorie professionnelle</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>🌍 Où ont lieu les courses ?</h2>
+        <ul>
+          <li>France (Le Mans)</li>
+          <li>Italie</li>
+          <li>Espagne</li>
+          <li>Japon</li>
+          <li>Qatar</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>🏆 Pilotes célèbres</h2>
+        <ul>
+          <li>Valentino Rossi</li>
+          <li>Marc Márquez</li>
+          <li>Fabio Quartararo</li>
+          <li>Pecco Bagnaia</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>😎 Pourquoi c’est impressionnant ?</h2>
+        <ul>
+          <li>Virages très inclinés</li>
+          <li>Très grande vitesse</li>
+          <li>Courses serrées</li>
+          <li>Technologie avancée</li>
+        </ul>
+      </section>
+
+      <footer>© 2026 - MotoGP Fan Page</footer>
+    </div>
+  </body>
+</html>
